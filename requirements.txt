@@ -6,8 +6,8 @@ langchain-community>=0.3.0
 
 # --- Google HAI-DEF & MedGemma Integration ---
 # Using the consolidated SDK for Vertex AI access
-langchain-google-vertexai>=3.2.0
-langchain-google-genai>=4.0.0
+langchain-google-vertexai>=2.0.0
+langchain-google-genai>=2.0.0
 google-cloud-aiplatform>=1.70.0
 
 # --- Vector Database & Embeddings ---

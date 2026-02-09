@@ -2,11 +2,9 @@
 
 A multi-modal agentic platform built for the MedGemma Impact Challenge. It automates the "Regulatory Cross-Examination" of clinical trial protocols, ensuring alignment with **21 CFR Part 11** and global ethical standards before a single patient is enrolled.
 
-## 🎯 Overview
+**RIP** tackles the critical bottleneck in clinical trials: regulatory compliance checking. By combining Retrieval-Augmented Generation (RAG) with LangGraph's agentic workflow, RIP automates the cross-examination of clinical trial protocols against FDA regulations, freeing researchers to focus on innovation rather than grunt work.
 
-**RIP** tackles the unsexy but critical bottleneck in clinical trials: regulatory compliance checking. By combining Retrieval-Augmented Generation (RAG) with LangGraph's agentic workflow, RIP automates the cross-examination of clinical trial protocols against FDA regulations, freeing researchers to focus on innovation rather than grunt work.
-
-## 🧠 Architecture
+## Architecture
 
 The platform uses a **two-node agentic workflow**:
 1. **Retrieval Node**: Searches 21 CFR Part 11 regulations for sections relevant to the protocol text
@@ -16,7 +14,7 @@ The platform uses a **two-node agentic workflow**:
 User Input (Protocol) → Retrieve Regulations → Audit Against Regulations → Compliance Report
 ```
 
-## 🚀 Quick Start
+## Getting Started
 
 ### Prerequisites
 
@@ -27,20 +25,19 @@ User Input (Protocol) → Retrieve Regulations → Audit Against Regulations →
 ### Installation
 
 ```bash
-# Clone the repository
+# clone repo
 git clone https://github.com/Once28/Regulatory-Intelligence-Platform.git
 cd Regulatory-Intelligence-Platform
-
-# Install dependencies
+# virtual environment
+conda create -n rip_env python=3.10 # to create
+conda activate rip_env # to activate
+# install requirements
 pip install -r requirements.txt
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your Google Cloud credentials
+# cp .env.example .env
+# .env with your Google Cloud credentials
 ```
 
 ### Running the Application
-
 ```bash
 streamlit run app.py
 ```
