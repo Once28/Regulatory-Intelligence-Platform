@@ -9,7 +9,7 @@ def initialize_rag(raw_law_text: str):
     chunks = splitter.split_text(raw_law_text)
     docs = [Document(page_content=c) for c in chunks]
     
-    # Use a medical/legal-friendly embedding model
+    # Use a medical/legal-friendly embedding model (we can update this to be more medical friendly)
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     
     # Create persistent local database
