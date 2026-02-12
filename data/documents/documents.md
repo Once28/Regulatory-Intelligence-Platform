@@ -38,6 +38,7 @@ This script will:
 - Save redacted PDFs to `non_compliant/protocols/`
 
 You can customize which types of information to redact using the `--types` flag:
+PROTOCOL_ID, VERSION, DATE, SIGNATURE, INVESTIGATOR, EMAIL, PHONE, IRB_ID, AMENDMENT, APPROVAL_DATE
 ```
 python data/documents/non_compliant/generate_negative_examples.py --types DATE SIGNATURE PROTOCOL_ID
 ```
