@@ -139,42 +139,16 @@ graph LR
                         --> G[Compliance Report]
 ```
 
-## 📋 To-Do List
-
-- [ ] Integrate MedGemma via Vertex AI endpoint
-- [ ] Add compliance scoring system (1-100)
-- [ ] Implement multi-file protocol upload
-- [ ] Expand to ICH-GCP and EMA guidelines
-- [ ] Add citation tracking for regulation references
-- [ ] Build audit trail export (PDF/CSV)
-- [ ] Create admin dashboard for batch processing
-- [ ] Unit tests for retrieval and audit nodes
-- [ ] Deployment via Cloud Run / Docker
-
-## 👥 Team
-
-- **Justin Zeng** - Data Scientist with Medical Specialty
-- **Kennard Mah** - Data Scientist
-
 ## 📄 License
 
-This project is built for the MedGemma Impact Challenge.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## 📞 Contact
-
-For questions about this project, please refer to [WRITEUP.md](WRITEUP.md) for technical documentation used for MedGamme submission.
-
-# Regulatory Intelligence Platform — System DAG
-
-## Overview
-
-The Regulatory Intelligence Platform (RIP) is structured as a **directed acyclic graph (DAG)** with five logical layers: external data sources, ingestion and transformation, an ontology-backed retrieval layer, agentic processing, and output artifacts. Each node below maps to a specific Python module and model.
+This project is built for the MedGemma Impact Challenge. Contributions are welcome! Please open an issue or submit a pull request. For questions about this project, please refer to [WRITEUP.md](WRITEUP.md) for technical documentation used for MedGamme submission.
 
 ---
+
+# RIP System DAG
+
+The Regulatory Intelligence Platform (RIP) is structured as a DAG with five logical layers: external data sources, ingestion and transformation, an ontology-backed retrieval layer, agentic processing, and output artifacts. Each node below maps to a specific Python module and model.
+
 
 ## DAG Diagram
 
